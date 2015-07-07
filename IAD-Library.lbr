@@ -56,7 +56,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>Hello there :)</description>
+<description>Custom library by IAD ZHdK.</description>
 <packages>
 <package name="CST">
 <description>This package is best if the IC will be surface-mounted with angeled legs.</description>
