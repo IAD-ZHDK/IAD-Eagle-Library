@@ -88,7 +88,7 @@
 </package>
 </packages>
 <symbols>
-<symbol name="CD4067BE">
+<symbol name="CD4067B">
 <pin name="GND" x="-10.16" y="-12.7" length="middle"/>
 <pin name="B" x="-10.16" y="-10.16" length="middle"/>
 <pin name="A" x="-10.16" y="-7.62" length="middle"/>
@@ -120,12 +120,12 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CD4067BE">
+<deviceset name="CD4067B">
 <description>CD4067B Multiplexer&lt;br&gt;
 &lt;br&gt;
 &lt;a href="http://www.ti.com/lit/ds/symlink/cd4067b.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="CD4067BE" x="-2.54" y="0"/>
+<gate name="G$1" symbol="CD4067B" x="-2.54" y="0"/>
 </gates>
 <devices>
 <device name="A" package="CST">
