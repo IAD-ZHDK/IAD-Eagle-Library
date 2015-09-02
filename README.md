@@ -1,6 +1,6 @@
 # EAGLE-Library
 
-**Our customized EAGLE library and some other stuff.**
+**Our customized EAGLE library and some other related resources.**
 
 ## Devices
 
