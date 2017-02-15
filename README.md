@@ -2,6 +2,17 @@
 
 **Our Eagle libraries, board designs and other related resources.**
 
+# Library Components
+
+- Standard Arduino Shield
+- Bluefruit LE SPI Socket
+- CD4067BE Multiplexer
+- MKR1000 Socket
+- NCH Mosfet
+- TCRT5000 Reflective Optical Sensor
+- PCB Touch-Pad
+- VNH5019 Full Bridge Motor Driver
+
 # Other Repositories
 
 - [Sparkfun Library](https://github.com/sparkfun/SparkFun-Eagle-Libraries)
