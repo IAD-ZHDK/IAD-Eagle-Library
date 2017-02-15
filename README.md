@@ -12,6 +12,7 @@
 - TCRT5000 Reflective Optical Sensor
 - PCB Touch-Pad
 - VNH5019 Full Bridge Motor Driver
+- Pololu MD09B Stepper Controller Socket
 
 # Other Repositories
 
