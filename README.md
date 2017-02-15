@@ -1,6 +1,6 @@
-# Eagle
+# IAD Eagle Library
 
-**Our Eagle libraries, board designs and other related resources.**
+**Our Eagle library and other related resources.**
 
 # Library Components
 
