@@ -13,6 +13,7 @@
 - PCB Touch-Pad
 - VNH5019 Full Bridge Motor Driver
 - Pololu MD09B Stepper Controller Socket
+- ESP32 Development Board
 
 # Other Repositories
 
