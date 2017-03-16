@@ -15,6 +15,10 @@
 - Pololu MD09B Stepper Controller Socket
 - ESP32 Development Board
 
+# External Libraries
+
+- [Traco-TSR1](https://www.diymodules.org/eagle-show-library?type=usr&id=1724&part=_traco_tsr-1.lbr)
+
 # Other Repositories
 
 - [Sparkfun Library](https://github.com/sparkfun/SparkFun-Eagle-Libraries)
