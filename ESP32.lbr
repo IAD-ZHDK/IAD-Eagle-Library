@@ -157,9 +157,9 @@
 <symbol name="ESP-WROOM-32">
 <pin name="GND@1" x="-2.54" y="-12.7" length="short"/>
 <pin name="3V3" x="-2.54" y="-15.24" length="short"/>
-<pin name="EN" x="-2.54" y="-17.78" length="short"/>
-<pin name="36-IA" x="-2.54" y="-20.32" length="short"/>
-<pin name="39-IA" x="-2.54" y="-22.86" length="short"/>
+<pin name="EN-RTS" x="-2.54" y="-17.78" length="short"/>
+<pin name="36-I" x="-2.54" y="-20.32" length="short"/>
+<pin name="39-I" x="-2.54" y="-22.86" length="short"/>
 <pin name="34-IA" x="-2.54" y="-25.4" length="short"/>
 <pin name="35-IA" x="-2.54" y="-27.94" length="short"/>
 <pin name="32-IOA" x="-2.54" y="-30.48" length="short"/>
@@ -168,7 +168,7 @@
 <pin name="26-IOD" x="-2.54" y="-38.1" length="short"/>
 <pin name="27-IO" x="-2.54" y="-40.64" length="short"/>
 <pin name="14-IO" x="-2.54" y="-43.18" length="short"/>
-<pin name="12-IO" x="-2.54" y="-45.72" length="short"/>
+<pin name="12" x="-2.54" y="-45.72" length="short"/>
 <pin name="GND@15" x="12.7" y="-63.5" length="short" rot="R90"/>
 <pin name="13-IO" x="15.24" y="-63.5" length="short" rot="R90"/>
 <pin name="SHD" x="17.78" y="-63.5" length="short" rot="R90"/>
@@ -183,13 +183,13 @@
 <pin name="NC" x="50.8" y="-27.94" length="short" rot="R180"/>
 <pin name="19-IO" x="50.8" y="-30.48" length="short" rot="R180"/>
 <pin name="18-IO" x="50.8" y="-33.02" length="short" rot="R180"/>
-<pin name="5-IO" x="50.8" y="-35.56" length="short" rot="R180"/>
+<pin name="5" x="50.8" y="-35.56" length="short" rot="R180"/>
 <pin name="17-IO" x="50.8" y="-38.1" length="short" rot="R180"/>
 <pin name="16-IO" x="50.8" y="-40.64" length="short" rot="R180"/>
 <pin name="4-IO" x="50.8" y="-43.18" length="short" rot="R180"/>
-<pin name="0-IO" x="50.8" y="-45.72" length="short" rot="R180"/>
-<pin name="2-IO" x="35.56" y="-63.5" length="short" rot="R90"/>
-<pin name="15-IO" x="33.02" y="-63.5" length="short" rot="R90"/>
+<pin name="0-DTR" x="50.8" y="-45.72" length="short" rot="R180"/>
+<pin name="2" x="35.56" y="-63.5" length="short" rot="R90"/>
+<pin name="15" x="33.02" y="-63.5" length="short" rot="R90"/>
 <pin name="SDI" x="30.48" y="-63.5" length="short" rot="R90"/>
 <pin name="SDO" x="27.94" y="-63.5" length="short" rot="R90"/>
 <pin name="SCK" x="25.4" y="-63.5" length="short" rot="R90"/>
@@ -200,7 +200,8 @@
 <wire x1="48.26" y1="-60.96" x2="0" y2="-60.96" width="0.254" layer="94"/>
 <text x="2.54" y="2.794" size="1.778" layer="95">&gt;Name</text>
 <text x="2.54" y="-2.794" size="1.778" layer="96" align="top-left">&gt;Value</text>
-<text x="25.4" y="-45.72" size="1.27" layer="97" align="bottom-center">I=IN, O=OUT, A=ADC, D=DAC
+<text x="25.4" y="-40.64" size="1.27" layer="97" align="bottom-center">Usable Pins:
+I=IN, O=OUT, A=ADC, D=DAC
 
 Reserved Pins:
 0, 2, 5, 12, (15)
@@ -209,11 +210,15 @@ Serial:
 EN = RTS
 0 = DTR
 
-34-39:
+34,35,36,39:
 No Pull Up/Down
 
-36-39
-Connected to Int. Capacitor</text>
+36,39:
+Connected to Int. Capacitor.
+
+36,39:
+ADC channels connected to
+internal hall sensor</text>
 <text x="5.08" y="-10.16" size="1.778" layer="94"></text>
 </symbol>
 </symbols>
@@ -225,16 +230,16 @@ Connected to Int. Capacitor</text>
 <devices>
 <device name="" package="ESP-WROOM-32">
 <connects>
-<connect gate="G$1" pin="0-IO" pad="25"/>
-<connect gate="G$1" pin="12-IO" pad="14"/>
+<connect gate="G$1" pin="0-DTR" pad="25"/>
+<connect gate="G$1" pin="12" pad="14"/>
 <connect gate="G$1" pin="13-IO" pad="16"/>
 <connect gate="G$1" pin="14-IO" pad="13"/>
-<connect gate="G$1" pin="15-IO" pad="23"/>
+<connect gate="G$1" pin="15" pad="23"/>
 <connect gate="G$1" pin="16-IO" pad="27"/>
 <connect gate="G$1" pin="17-IO" pad="28"/>
 <connect gate="G$1" pin="18-IO" pad="30"/>
 <connect gate="G$1" pin="19-IO" pad="31"/>
-<connect gate="G$1" pin="2-IO" pad="24"/>
+<connect gate="G$1" pin="2" pad="24"/>
 <connect gate="G$1" pin="21-IO" pad="33"/>
 <connect gate="G$1" pin="22-IO" pad="36"/>
 <connect gate="G$1" pin="23-IO" pad="37"/>
@@ -245,12 +250,12 @@ Connected to Int. Capacitor</text>
 <connect gate="G$1" pin="33-IOA" pad="9"/>
 <connect gate="G$1" pin="34-IA" pad="6"/>
 <connect gate="G$1" pin="35-IA" pad="7"/>
-<connect gate="G$1" pin="36-IA" pad="4"/>
-<connect gate="G$1" pin="39-IA" pad="5"/>
+<connect gate="G$1" pin="36-I" pad="4"/>
+<connect gate="G$1" pin="39-I" pad="5"/>
 <connect gate="G$1" pin="3V3" pad="2"/>
 <connect gate="G$1" pin="4-IO" pad="26"/>
-<connect gate="G$1" pin="5-IO" pad="29"/>
-<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="5" pad="29"/>
+<connect gate="G$1" pin="EN-RTS" pad="3"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="GND@1" pad="1"/>
 <connect gate="G$1" pin="GND@15" pad="15"/>
